@@ -1,3 +1,17 @@
 <p>
-  show-search works!
-</p>
+  <div *ngIf = "search">
+    <div>
+      <span>{{search.name}}</span> 
+      <!-- <div *ngFor="let genre of search.genres">{{genres}}</div> -->
+      <div>{{search.genres}}</div>
+    </div>
+    <div>
+      <img [src]='search.image'> <br>
+      <span>{{search.schedule}}, {{search.time}}</span>
+    </div>
+    <div>
+      <span>{{search.network}}</span> 
+    </div>
+    <div [innerHTML]="search.summary"></div>
+  </div>
+  
