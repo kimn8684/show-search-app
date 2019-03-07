@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IShowDetails } from '../ishow-details';
-import { ShowService } from '../show-service.service';
+import { ShowService } from '../show.service';
 
 @Component({
   selector: 'app-show-details',
