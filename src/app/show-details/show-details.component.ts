@@ -3,12 +3,12 @@ import { IShowDetails } from '../ishow-details';
 import { ShowService } from '../show-service.service';
 
 @Component({
-  selector: 'app-show-search',
-  templateUrl: './show-search.component.html',
-  styleUrls: ['./show-search.component.css']
+  selector: 'app-show-details',
+  templateUrl: './show-details.component.html',
+  styleUrls: ['./show-details.component.css']
 })
-export class ShowSearchComponent implements OnInit {
-  @Input() search: IShowDetails
+export class ShowDetailsComponent implements OnInit {
+  @Input() show: IShowDetails
   
   constructor(private showService: ShowService) { }
 
