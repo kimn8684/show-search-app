@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { IShowDetails } from '../ishow-details';
-import { ShowService } from '../show-service.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-show-search',
@@ -8,9 +6,8 @@ import { ShowService } from '../show-service.service';
   styleUrls: ['./show-search.component.css']
 })
 export class ShowSearchComponent implements OnInit {
-  @Input() search: IShowDetails
-  
-  constructor(private showService: ShowService) { }
+
+  constructor() { }
 
   ngOnInit() {
   }
