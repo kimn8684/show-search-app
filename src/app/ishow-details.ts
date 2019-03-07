@@ -6,5 +6,4 @@ export interface IShowDetails {
     schedule: string
     image: string
     summary: string
-
 }
