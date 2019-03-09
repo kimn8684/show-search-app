@@ -23,11 +23,16 @@ mat-toolbar > span {
 }
 
 /* Component Styles */
-body > app-root > div > div:nth-child(2) {
-
+body > app-root > div {
+    width: 53%;
+    margin: 0 auto;
+    background-color: #dee4e6;
 }
 
-body > app-root > div {
-    width: 40%;
-    margin: 0 auto;
+body > app-root > div > div:nth-child(2) > app-show-search > form {
+    margin-bottom: 7%;
+}
+
+body > app-root > div > div:nth-child(2) > h2 {
+    font-size: 1.2em;
 }

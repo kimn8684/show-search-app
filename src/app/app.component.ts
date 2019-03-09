@@ -16,6 +16,10 @@ export class AppComponent {
 
   doSearch(searchValue) {
     const userInput = searchValue.trim();
-    this.showService.getCurrentShow(userInput).subscribe(data => this.currentProgram = data);
+    this.showService.getCurrentShow(userInput).subscribe(data => {
+      this.currentProgram = data;
+      console.log(this.currentProgram);
+    });
+    
   }
 }

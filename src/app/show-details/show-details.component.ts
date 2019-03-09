@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IShowDetails } from '../ishow-details';
+import { ShowService } from '../show.service';
 
 
 @Component({
@@ -8,11 +9,13 @@ import { IShowDetails } from '../ishow-details';
   styleUrls: ['./show-details.component.css']
 })
 export class ShowDetailsComponent implements OnInit {
-  @Input() show: IShowDetails
-  
-  constructor() { }
+  @Input() current: IShowDetails;
 
-  ngOnInit() {
-  }
+  constructor() {
+
+}
+
+ngOnInit() {
+}
 
 }

@@ -6,10 +6,10 @@
   </div> 
   <div>
     <h2>Just enter a movie or show name below to get the info you need</h2>
-    <app-show-search></app-show-search>
+    <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
     <mat-card>
       <h2>Movie Details</h2>
-      <app-show-details></app-show-details>
+      <app-show-details [current]="currentProgram"></app-show-details>
     </mat-card>
   </div>
 </div>
