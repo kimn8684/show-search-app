@@ -36,3 +36,6 @@ body > app-root > div > div:nth-child(2) > app-show-search > form {
 body > app-root > div > div:nth-child(2) > h2 {
     font-size: 1.2em;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
