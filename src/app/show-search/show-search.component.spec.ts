@@ -2,7 +2,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA }  from '@angular/core';
 import { ShowSearchComponent } from './show-search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
- 
 
 describe('ShowSearchComponent', () => {
   let component: ShowSearchComponent;
