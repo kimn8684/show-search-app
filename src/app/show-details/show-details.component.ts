@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IShowDetails } from '../ishow-details';
-import { ShowService } from '../show.service';
+
 
 @Component({
   selector: 'app-show-details',
@@ -10,7 +10,7 @@ import { ShowService } from '../show.service';
 export class ShowDetailsComponent implements OnInit {
   @Input() show: IShowDetails
   
-  constructor(private showService: ShowService) { }
+  constructor() { }
 
   ngOnInit() {
   }
