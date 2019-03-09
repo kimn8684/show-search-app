@@ -7,7 +7,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg");
+    background: url("https://i.pinimg.com/originals/fe/9a/fb/fe9afbe8b357c2f0068b50626fb1e840.jpg");
 }
 
 /* Header */
@@ -26,7 +26,14 @@ mat-toolbar > span {
 body > app-root > div {
     width: 53%;
     margin: 0 auto;
-    background-color: #dee4e6;
+}
+
+body > app-root > div > div:nth-child(2) {
+    background-color: #ffffffbd;
+}
+
+#mat-form-field-label-1 {
+    font-weight: bold;
 }
 
 body > app-root > div > div:nth-child(2) > app-show-search > form {
@@ -35,4 +42,8 @@ body > app-root > div > div:nth-child(2) > app-show-search > form {
 
 body > app-root > div > div:nth-child(2) > h2 {
     font-size: 1.2em;
+}
+
+body > app-root > div > div:nth-child(2) > mat-card > app-show-details > div > div:nth-child(2) > img {
+    max-width: 100%;
 }
