@@ -11,10 +11,13 @@ body {
 }
 
 /* Header */
+.header-img {
+    margin: 0 auto;
+}
 
 .mat-toolbar.mat-primary {
     background-color: #0f474675;
-    margin: 0 auto;
+    margin: 5% auto 0;
 }
 
 mat-toolbar > span {
@@ -32,6 +35,10 @@ body > app-root > div > div:nth-child(2) {
     background-color: #ffffffbd;
 }
 
+.mat-card {
+    overflow: auto;
+}
+
 #mat-form-field-label-1 {
     font-weight: bold;
 }
@@ -42,6 +49,22 @@ body > app-root > div > div:nth-child(2) > app-show-search > form {
 
 body > app-root > div > div:nth-child(2) > h2 {
     font-size: 1.2em;
+}
+
+#show-image   {
+        float: left;
+        width: 30%;
+        padding-right: 3%;
+}
+
+#show-name {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body > app-root > div > div:nth-child(2) > mat-card > app-show-details > div > div:nth-child(3) {
+    text-align: justify;
 }
 
 body > app-root > div > div:nth-child(2) > mat-card > app-show-details > div > div:nth-child(2) > img {

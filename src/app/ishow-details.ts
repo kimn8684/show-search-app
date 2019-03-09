@@ -1,9 +1,9 @@
 export interface IShowDetails {
     name: string
-    genres: string
+    genres: string[]
     network: string
     time: string
-    schedule: string
+    schedule: string[]
     image: string
     summary: string
 }

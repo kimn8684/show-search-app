@@ -1,15 +1,15 @@
 <div *ngIf = "current">
   <div>
-    <span>{{current.name}}</span> 
-    <!-- <div *ngFor="let genre of search.genres">{{genres}}</div> -->
-    <div>{{current.genres}}</div>
+    <span id="show-name">{{current.name}}</span>
+    <img id="show-image" [src]='current.image'> <br>
+    <div><strong>Genre</strong>: {{current.genres}}</div>
   </div>
+
   <div>
-    <img [src]='current.image'> <br>
-    <span>{{current.schedule}}, {{current.time}}</span>
+    <span><strong>Schedule</strong>: {{current.schedule}}, {{current.time}}   </span>
+    <span><strong>Network</strong>: {{current.network}}</span> 
   </div>
-  <div>
-    <span>{{current.network}}</span> 
-  </div>
+  
   <div [innerHTML]="current.summary"></div>
+
 </div>

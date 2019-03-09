@@ -1,14 +1,13 @@
 <div>
   <div style="text-align: center">
     <mat-toolbar  color="primary">
-      <span>Rain got you down? Make it a movie night!</span>
+      <img class="header-img" src="http://i63.tinypic.com/wqvkon.png" alt="TV Show Search">
     </mat-toolbar>
   </div> 
   <div>
     <h2>Just enter a movie or show name below to get the info you need</h2>
     <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
     <mat-card>
-      <h2>Movie Details</h2>
       <app-show-details [current]="currentProgram"></app-show-details>
     </mat-card>
   </div>

@@ -33,9 +33,9 @@ export class ShowService {
   private transformToIShowDetails(data: IShowDetailsData): IShowDetails {
     return {
       time: data.schedule.time,
-      schedule: data.schedule.days[''],
+      schedule: data.schedule.days,
       name: data.name,
-      genres: data.genres[''],
+      genres: data.genres,
       network: data.network.name,
       image: data.image.original,
       summary: data.summary
