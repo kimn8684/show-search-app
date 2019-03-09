@@ -1,3 +1,15 @@
-<p>
-  show-search works!
-</p>
+<form action="">
+  <mat-form-field>
+    <mat-icon matPrefix>search</mat-icon>
+
+    <input matInput type="text" placeholder="Enter name of movie or show" [formControl] = "search" aria-label="Movie or Show Name"/>
+    
+    <mat-hint>Specify movie or show name like "Lost"</mat-hint>
+
+    <mat-error *ngIf="search.invalid">
+      Type more than one character to search
+    </mat-error>
+  </mat-form-field>
+  <div>    
+  </div>
+</form>

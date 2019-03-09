@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* General Styles */
+html, body { height: 100%; }
+
+body { 
+    margin: 0;
+    text-align: center;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg");
+}
+
+/* Header */
+
+.mat-toolbar.mat-primary {
+    background-color: #0f474675;
+    margin: 0 auto;
+}
+
+mat-toolbar > span {
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+/* Component Styles */
+body > app-root > div > div:nth-child(2) {
+
+}
+
+body > app-root > div {
+    width: 40%;
+    margin: 0 auto;
+}
